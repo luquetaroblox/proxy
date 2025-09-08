@@ -1,15 +1,11 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "app.py",
-            "use": "@vercel/python"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "app.py"
-        }
-    ]
+  "name": "tropado777roblox",
+  "type": "python",
+  "main": "app.py",
+  "routes": [
+    {
+      "pattern": "/(.*)",
+      "handler": "app.py"
+    }
+  ]
 }
