@@ -4,4 +4,3 @@ compatibility_flags = ["python_workers"]
 
 [[routes]]
 pattern = "/(.*)"
-handler = "app.py"
