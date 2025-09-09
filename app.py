@@ -1,9 +1,7 @@
 import requests
 from flask import Flask, request
 
-
 app = Flask(__name__)
-
 
 @app.before_request
 def before_request():
@@ -14,7 +12,6 @@ def before_request():
         headers=request.headers
     )
     return response.text, response.status_code, {"Content-Type": response.headers.get("Content-Type")}
-
 
 if __name__ == "__main__":
     app.run()
