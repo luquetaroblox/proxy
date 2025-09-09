@@ -1,0 +1,7 @@
+name = "tropado777roblox"
+main = "app.py"
+compatibility_flags = ["python_workers"]
+
+[[routes]]
+pattern = "/(.*)"
+handler = "app.py"
